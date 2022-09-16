@@ -1,0 +1,952 @@
+﻿* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+hr {
+    height: 3px;
+    background-color:darkgoldenrod;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(245,245,245);
+}
+/*NavBar*/
+a{
+    text-decoration:none
+}
+ul{
+    list-style:none;
+}
+.container {
+    width: 100%;
+    background-color: rgb(0,128,128);
+    margin: auto;
+}
+.Item:hover {
+    background-color: rgb(0, 0, 0);
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+}
+.row{
+    display:flex;
+    flex-wrap:wrap;
+}
+.align-items-center{
+    align-items:center;
+}
+.justify-content-between{
+    justify-content:space-between;
+}
+.header{
+   position:relative;
+}
+.header .nav {
+   background-color: rgb(0,128,128);
+}
+.header .nav ul li{
+    display:inline-block;
+    margin-left:40px;
+}
+.header .nav ul li a {
+    display: block;
+    padding: 5px 0;
+       
+}
+.NavItem a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.nav-toggler {
+    height: 34px;
+    width: 44px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+.nav-toggler span {
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.nav-toggler span::before,
+.nav-toggler span::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    left: 0px;
+}
+.nav-toggler span::before{
+    top:-6px;
+}
+.nav-toggler span::after {
+    top:6px;
+}
+.HomeMainHeading {
+   font-size: 30px;
+   text-align: center;
+}
+.HomeSubHeading {
+    text-align: center;
+}
+
+.HomeMainImage {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.MainImage {
+    width: 100%;
+    max-height: 520px;
+}
+.Banner {
+   
+    height: 490px;
+    width: 100%;
+    display: flex;
+    background-image: url(homeImages/mainHomeimg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 490px;
+}
+
+.HomeBox1, .HomeBox2, .HomeBox3 {
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgb(211,211,211);
+    border-radius: 5px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+}
+.PopularTea{
+    margin-left:40px;
+}
+
+.HomeBox2Item:nth-child(2){
+    display:flex;
+    flex-direction:column;
+}
+
+.HomeBox3Item:nth-child(1) {
+   padding-top: 40px;
+   background-image: url(homeImages/back2.jpg);
+  
+       
+}
+.HomeBox3Item:nth-child(2) {
+        padding-right: 15px;
+        margin: 10px;
+}
+.HomeBox3Item:nth-child(3) {
+     padding-right: 15px;
+}
+ 
+.HomeBox1Item:nth-child(1) {
+        background-image: url(homeImages/back2.jpg);
+}
+.HomeBox1Item:nth-child(2) {
+    padding: 10px;
+    border-radius: 10px;
+   
+}
+.HomeBox2Item:nth-child(1) {
+    margin: 10px;
+    padding: 5px;
+    
+    
+}
+.HomeBox2Item:nth-child(2) {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(homeImages/back2.jpg);
+}
+.Box2:nth-child(2) {
+    padding-left:25px;
+   
+}
+.HomeBox1Item:nth-child(1) {
+    background-color: rgb(255, 255, 255);
+}
+.HomeBox1Item:nth-child(2) {
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255);
+}
+.TeaPluckers {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    width: 595px;
+    height: 310px;
+}
+.lionlogo {
+    margin-left:260px;
+    width:125px;
+    height:105px;
+}
+.LionLogo {
+    margin-left: 5px;
+    margin-top: 85px;
+    width: 205px;
+    height: 150px;
+}
+.BannerItem,.MuseumBannerItem {
+    text-align:center;
+    margin-left:50px;
+    margin-top:20px;
+    width:450px;
+    font-size: 15px;
+    color: white;
+    animation: slide-up 2s;
+}
+.TeaCup {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 50px;
+    width: 450px;
+    height: 245px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.leaves {
+    width: 450px;
+    height: 245px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.HomeBox3Img1{
+   width:570px;
+   height:300px;
+}
+.HomeBox3Img2 {
+    width: 250px;
+    height: 380px;
+}
+@keyframes slide-up {
+    from {
+        opacity: 0.1;
+        line-height: 90px;
+    }
+
+    to {
+        opacity: 1;
+        line-height: 22px;
+    }
+}
+/*mediaquery*/
+@media screen and (max-device-width: 321px) {
+    .container{
+        padding:0px;
+    }
+    .nav-toggler{
+        display:flex;
+        margin:10px;
+    }
+
+    .header .nav {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        background-color: rgb(0,128,128);
+        border-top: 1px solid rgb(255, 255, 255);
+    }
+    .header .nav ul li{
+        display:block;
+        margin:0px;
+    }
+
+    .Banner, .MuseumBanner {
+        margin-top: 195px;
+    }
+    .BannerItem, .MuseumBannerItem {
+        margin-left: 0px;
+    }
+    .HomeBox1 {
+        border:none;
+        margin:0px;
+        flex: 100%;
+        flex-direction: column-reverse;
+        font-size: 14px;
+    }
+    .HomeBox2 {
+        border-radius:0px;
+        margin: 0px;
+        flex: 100%;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .HomeBox2Item:nth-child(2){
+        margin:0px;
+        padding:0px;
+    }
+    .Box2:nth-child(2){
+        margin:0px;
+        padding:0px;
+    }
+    .HomeBox3 {
+        border: none;
+        margin: 0px;
+        flex: 100%;
+        flex-direction: column;
+        font-size: 14px;
+    }
+    .HomeBox3Item{
+        padding:0px;
+        margin:0px;
+       
+    }
+    .HomeBox3Item:nth-child(1) {
+          background-image:none;
+          padding-top:15px;
+    }
+            
+    .lionlogo{
+            margin-left: 80px;
+            width: 125px;
+            height: 105px;
+     }
+    .TeaPluckers{
+        border-radius:0px;
+        margin:0px;
+        width:100%;
+        height:170px;
+    }
+    .TeaCup {
+        margin-top: 10px;
+        width: 280px;
+        height: 150px;
+        margin-left: 20px;
+        border: none;
+    }
+    .leaves {
+        width: 280px;
+        height: 100%;
+        border: 2px solid rgb(255, 255, 255);
+        border: none;
+        margin-left: 20px;
+    }
+    .HomeBox3Img1 {
+        margin: 0px;
+        width: 100%;
+        height: 150px;
+    }
+
+    .HomeBox3Img2 {
+        padding-left:70px;
+        width: 170px;
+        height: 260px;
+    }
+}
+ul {
+    list-style-type: disc;
+}
+
+
+
+/*museum page bellow*/
+.MuseumBanner {
+    height: 490px;
+    width: 100%;
+    display: flex;
+    background-image: url("MuseumImages/Museum.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 490px;
+}
+.HeadingMuseum{
+    text-align:center;
+}
+.Imagelabel{
+    text-align:center;
+}
+.MuseumBox1 {
+    display: flex;
+    margin: 20px;
+    box-shadow: 5px 5px 10px rgb(169,169,169);
+}
+.MusuemBox1Item {
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.MuseumBox2 {
+    display: flex;
+    margin:10px;
+    justify-content:center;
+}
+.MuseumBox2Item {
+    margin-right:30px;
+}
+.MuseumBox2Item:nth-child(1) {
+        margin-left: 30px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: rgb(255, 255, 255);
+}
+.MuseumBox3{
+    display:flex;
+}
+
+.MuseumImg{
+    margin:10px;
+    border-radius:10px;
+    width:400px;
+    height:250px;
+}
+.MuseumImgOutside{
+    padding-top:40px;
+    padding-right:20px;
+    width:470px;
+    height:270px;
+}
+.googlemap {
+    width: 500px;
+    height: 300px;
+}
+@media screen and (max-device-width: 321px) {
+   .MuseumBox1,.MuseumBox2{
+       font-size:13px;
+       flex-direction:column;
+       margin:0px;
+       padding:0;
+      
+   }
+   .MuseumImgOutside {
+        height: 200px;
+        width: 100%;
+   }
+   .MuseumBox2Item:nth-child(1) {
+       margin:6px;
+   }
+   
+   .MuseumImg {
+       border-radius:0px;
+       height:200px;
+       width:300px;
+   }
+   .googlemap {
+        border-radius: 8px;
+        padding: 15px;
+        width: 280px;
+        height: 300px;
+   }
+    .MuseumBox3 {
+        flex-direction: column;
+    }
+   
+}
+
+    /*By Products Page*/
+.ProductBox1{
+    display:flex;
+    margin-left:100px;
+    margin-right:100px;
+    margin-bottom:20px;
+   
+}
+.ProductBox1Item {
+    margin-left: 10px;
+    box-shadow: 5px 5px 10px rgb(128,128,128);
+    border-radius: 10px;
+}
+.ProductBox1Item:nth-child(1) {
+      background-color: rgb(255, 255, 255);
+       padding-left: 20px;
+       padding-right: 20px;
+  }
+.ProductBox1Item:nth-child(2) {
+    padding-top: 50px;
+}
+.ProductName {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+}
+
+.ProductImg{
+    width:320px;
+    height:370px;
+}
+
+/*PURCHASE BUTTON*/
+.PurchaseButton {
+    margin-left: 28px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgb(0,128,128);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+}
+
+.PurchaseButton:hover {
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+        
+ }
+.ProductSubHead {
+    padding: 5px;
+    border: none;
+    padding-top: 10px;
+    padding-top: 6px;
+    background-color: rgb(0,0,0);
+    color: rgb(255, 255, 255);
+}
+.TopPageButton {
+    margin-bottom: 60px;
+    margin-left: 1000px;
+    border: none;
+    background-color: rgb(0,128,128);
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-device-width: 321px) {
+    .Mainheading{
+        margin-top:200px;
+        
+    }
+    .ProductBox1{
+        flex-direction:column;
+        font-size:13px;
+        margin:0px;
+        padding:0px;
+    }
+    .ProductBox1Item {
+        margin: 6px;
+        padding: 0px;
+       
+    }
+    .ProductName{
+        border-radius:5px;
+        padding-left:10px;
+       
+    }
+    .ProductBox1Item:nth-child(2){
+        padding-top:0px;
+    }
+    .ProductImg {
+        width: 210px;
+        height: 230px;
+        margin-left: 50px;
+        
+    }
+}
+
+    /*Tea Planation page*/
+.MainHeading {
+    background-image: url(homeImages/back2.jpg);
+    background-size:cover;
+}
+     .PlantationsBox1 {
+    display: flex;
+    margin-top: 10px;
+     }
+
+.PlantationsBox1Item:nth-child(1) {
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 0px 5px 10px rgb(128,128,128);
+}
+
+    .PlantationsBox1Item:nth-child(2) {
+        margin-left: 50px;
+        margin-right: 100px;
+        margin-top: 55px;
+    }
+
+    .TeaPlantationName, .Imagelabel {
+        text-align: center;
+    }
+
+    .PlantationImg {
+        width: 555px;
+        height: 200px;
+    }
+
+    .PlantationMap {
+        width: 510px;
+        height: 320px;
+    }
+
+    table {
+        margin-left: 80px;
+        margin-top: 30px;
+        width: 90%;
+    }
+
+    th {
+        background-color: rgb(0,0,0);
+        color: white;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    td {
+        padding: 2px;
+        border: 2px solid rgb(211,211,211);
+    }
+
+    tfoot {
+        background-color: rgb(211,211,211);
+    }
+
+    @media screen and (max-device-width: 321px) {
+        .MainHeading {
+            margin-top: 200px;
+        }
+
+        .HomeMainHeading {
+            font-size: 18px;
+        }
+
+        .PlantationsBox1 {
+            flex-direction: column;
+        }
+
+        .PlantationsBox1Item:nth-child(1) {
+            margin: 0px;
+            font-size: 13px;
+        }
+
+        .PlantationsBox1Item:nth-child(2) {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .PlantationImg {
+            width: 100%;
+            height: 150px;
+        }
+
+        .PlantationMap {
+            width: 100%;
+            height: 200px;
+        }
+
+        table {
+            margin: 0px;
+        }
+    }
+    /*Tea Sales Pages*/
+.dropbtn {
+    background-color: rgb(0,128,128);
+    color: rgb(255,255,255);
+    padding: 2px;
+    font-size: 16px;
+    border: none;
+}
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+.dropdown-content {
+    margin-right: 20px;
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+ .dropdown-content a {
+            color: rgb(0,0,0);
+            padding: 12px 16px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+ }
+
+ .dropdown-content a:hover {
+            text-align: center;
+            color: rgb(255,255,255);
+            background-color: rgb(0,128,128);
+            border-radius: 5px;
+ }
+
+ .dropdown:hover .dropdown-content {
+        margin:2px;
+        border-radius:10px;
+        padding:10px;
+        display: block;
+ }
+
+ .dropdown:hover .dropbtn {
+        background-color: rgb(0,0,0);
+  }
+
+@media screen and (max-device-width: 321px) {
+        .OutletBox {
+            flex-direction: column;
+           
+        }
+    }
+
+    .footer {
+        background-color:rgb(4,93,93);
+        height: 220px;
+    }
+
+    .footerContainer {
+        display: flex;
+        background-color: rgb(0,128,128);
+        margin-left: auto;
+        padding-right: 60px;
+        padding-left: 40px;
+        border-bottom: 1px solid rgb(255, 255, 255);
+    }
+
+    .footer-col {
+        margin-left: 30px;
+        margin-right: 40px;
+    }
+
+    .footer-col:nth-child(1) {
+        margin-top: 15px;
+        margin-right: 190px;
+        margin-left: 100px;
+        color:rgb(0,0,0);
+        font-size: 20px;
+     }
+
+    .footerContainer li a {
+        color: rgb(255, 255, 255);
+    }
+
+    .footerContainer ul {
+        list-style-type: none;
+    }
+
+    .footerheading {
+        color: rgb(255, 255, 255);
+        margin-left: 40px;
+        font-size: 20px;
+    }
+
+    .socialMediaHeading {
+        margin-left: 100px;
+    }
+
+    .socialMediaIcons {
+        display: flex;
+    }
+
+    .Icon {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgb(255, 255, 255);
+        border-radius: 8px;
+        opacity: 0.9;
+        background-color: rgb(0,128,128);
+    }
+
+    .copyright {
+        margin-left: 100px;
+        font-size: 11px;
+    }
+
+    @media screen and (max-device-width: 321px) {
+        .copyright {
+            margin-left: 90px;
+        }
+
+        .footer {
+            height: 440px;
+            font-size: 11px;
+        }
+
+        .footerContainer {
+            flex-direction: column;
+            padding: 0px;
+        }
+
+        .footer-col {
+            padding-left: 30px;
+        }
+
+        .footer-col:nth-child(1) {
+            font-size: 12px;
+            margin-right: 0px;
+            margin-left: 15px;
+            padding: 0px;
+        }
+
+        .socialMediaHeading {
+            font-size: 13px;
+        }
+
+        .footerheading {
+            font-size: 13px;
+            margin-left: 50px;
+        }
+    }
+    /*donate and purchase*/
+/*purchase and donate page*/
+.OutletHeading {
+   text-align:center;
+}
+
+.OutletBox,.OutletBox2{
+    margin: 20px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(211,211,211);
+}
+
+.OutletBox1Item:nth-child(1) {
+        padding-left: 90px;
+}
+
+
+.OutletBox1Item:nth-child(2) {
+        background-color: rgb(255,255,255);
+        padding-left: 10px;
+        padding-right: 50px;
+}
+.OutletBox2Item:nth-child(1){
+    padding-left:80px;
+    padding-right:30px;
+}
+
+.OutletInnerBox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 50px;
+    padding-right: 60px;
+}
+
+.supermarketimg {
+    border-radius: 10px;
+    width: 450px;
+    height: 190px;
+}
+
+.supermarketimg2 {
+    width: 540px;
+    height: 250px;
+}
+
+.supermarketimg3 {
+    border-radius: 10px;
+    width: 450px;
+    height: 190px;
+}
+
+.supermarketimg4 {
+    margin-top:20px;
+    width: 470px;
+    height: 400px;
+}
+.imagelabel{
+    text-align:center;
+}
+.OutletBox3 {
+    background-color:mintcream;
+    padding:10px;
+}
+.OutletBox3Item {
+    width: 500px;
+    margin-left: 350px;
+    margin-right: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: rgb(255,255,255);
+    border: 3px solid rgb(0,0,0);
+    border-radius: 10px;
+}
+.donatebutton{
+    border-radius:10px;
+    font-size:20px;
+    background-color:teal;
+    border:none;
+    color:white;
+    padding:10px;
+    margin-left:165px;
+    margin-top:20px;
+}
+.OutletMap{
+    width:550px;
+    height:200px;
+}
+.OutletInfo {
+    display: flex;
+    margin-top:25px;
+    margin-left:35px;
+}
+.Outletbutton{
+    border-radius:4px;
+    font-size:15px;
+    border:none;
+    background-color:mintcream;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-right:15px;
+    padding-left:15px;
+    border: 2px solid black;
+    margin-right:30px;
+}
+
+@media screen and (max-device-width: 321px) {
+    .Outletbutton{
+        padding:5px;
+        font-size:14px;
+        margin-right:10px;
+    }
+    .OutletBox3Item {
+        font-size: 13px;
+        margin: 0px;
+        width: 100%;
+    }
+    .donatebutton{
+        border-radius:3px;
+        margin-left:65px;
+
+    }
+    .OutletBox {
+        flex-direction: column-reverse;
+        font-size: 13px;
+        margin: 5px;
+    }
+    .OutletBox2 {
+        flex-direction: column;
+        font-size: 13px;
+        margin: 5px;
+    }
+    .OutletBox1Item:nth-child(1) ,.OutletBox1Item:nth-child(2), .OutletBox2Item:nth-child(1) {
+        padding: 0px;
+        margin: 0px;
+    }
+  
+    .supermarketimg4 {
+        width: 305px;
+        height: 350px;
+    }
+    .supermarketimg2{
+        width:305px;
+        height:200px;
+    }
+    .OutletInnerBox {
+        margin:5px;
+        padding:0px;
+    }
+    .supermarketimg {
+        border-radius: 0px;
+        width: 300px;
+        height: 190px;
+    }
+}
+   
